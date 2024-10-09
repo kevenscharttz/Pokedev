@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Pokemon;
+    src: url(../font/pokemon/Pokemon\ Solid.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins/Poppins-Regular.ttf) format(truetype);
+}
