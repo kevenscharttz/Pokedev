@@ -1,38 +1,38 @@
-const listaSelecaoPokedevs = document.querySelectorAll(".pokedev");
+const listaSelecaoPokemons = document.querySelectorAll(".pokemon");
 
-listaSelecaoPokedevs.forEach(pokedev => {
-	pokedev.addEventListener("click", () => {
-		esconderCartaoPokedev();
+listaSelecaoPokemons.forEach(pokemon => {
+	pokemon.addEventListener("click", () => {
+		esconderCartaoPokemon();
 
-		const idPokedevSelecionado = mostrarCartaoPokedevSelecionado(pokedev);
+		const idPokemonSelecionado = mostrarCartaoPokemonSelecionado(pokemon);
 
-		desativarPokedevNaListagem();
-		ativarPokedevSelecionadoNaListagem(idPokedevSelecionado);
+		desativarPokemonNaListagem();
+		ativarPokemonSelecionadoNaListagem(idPokemonSelecionado);
 
 	})
 })
 
 
-function ativarPokedevSelecionadoNaListagem(idPokedevSelecionado) {
-	const pokedevSelecionadoNaListagem = document.getElementById(idPokedevSelecionado);
-	pokedevSelecionadoNaListagem.classList.add("ativo");
+function ativarPokemonSelecionadoNaListagem(idPokemonSelecionado) {
+	const pokemonSelecionadoNaListagem = document.getElementById(idPokemonSelecionado);
+	pokemonSelecionadoNaListagem.classList.add("ativo");
 }
 
-function desativarPokedevNaListagem() {
-	const pokedevAtivoNaListagem = document.querySelector(".ativo");
-	pokedevAtivoNaListagem.classList.remove("ativo");
+function desativarPokemonNaListagem() {
+	const pokemonAtivoNaListagem = document.querySelector(".ativo");
+	pokemonAtivoNaListagem.classList.remove("ativo");
 }
 
-function mostrarCartaoPokedevSelecionado(pokedev) {
-	const idPokedevSelecionado = pokedev.attributes.id.value;
-	const idDoCartaoPokedevParaAbrir = "cartao-" + idPokedevSelecionado;
-	const cartaoPokedevParaAbrir = document.getElementById(idDoCartaoPokedevParaAbrir);
-	cartaoPokedevParaAbrir.classList.add("aberto");
-	return idPokedevSelecionado;
+function mostrarCartaoPokemonSelecionado(pokemon) {
+	const idPokemonSelecionado = pokemon.attributes.id.value;
+	const idDoCartaoPokemonParaAbrir = "cartao-" + idPokemonSelecionado;
+	const cartaoPokemonParaAbrir = document.getElementById(idDoCartaoPokemonParaAbrir);
+	cartaoPokemonParaAbrir.classList.add("aberto");
+	return idPokemonSelecionado;
 }
 
-function esconderCartaoPokedev() {
-	const cartaoPokedevAberto = document.querySelector(".aberto");
-	cartaoPokedevAberto.classList.remove("aberto");
+function esconderCartaoPokemon() {
+	const cartaoPokemonAberto = document.querySelector(".aberto");
+	cartaoPokemonAberto.classList.remove("aberto");
 }
 

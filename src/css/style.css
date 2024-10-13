@@ -17,7 +17,7 @@
     --color-teste1: #fbff00;
     --color-teste2: #ff0000;
 }
-.cartoes-pokedev img{
+.cartoes-pokemon img{
     width: 8%;
 }
 * {
@@ -35,6 +35,7 @@ body {
     background-image: url(../img/background.png);
     background-size: cover;
 }
+
 
 body::before {
     content: "";
@@ -56,32 +57,33 @@ main {
     background-image: linear-gradient(to bottom);
 }
 
-.cartao-pokedev {
+.cartao-pokemon {
     display: none;
     max-width: 365px;
     border-radius: 10px;
     box-shadow: #64646f33 0px 7px 29px 0px;
 }
 
-.cartoes-pokedev img{
+.cartoes-pokemon img{
     width: 8%;
 }
 
-.cartao-pokedev.aberto {
+
+.cartao-pokemon.aberto {
     display: block;
 }
 
-.cartao-pokedev img {
+.cartao-pokemon img {
     width: 100%;
     height: 100%;
     margin-top: 10px;
 }
 
-.cartao-pokedev .cartao-topo {
+.cartao-pokemon .cartao-topo {
     padding: 30px 40px;
 }
 
-.cartao-pokedev .nome {
+.cartao-pokemon .nome {
     font-family: var(--fonte-pokemon);
     letter-spacing: 3px;
     margin-bottom: 5px;
@@ -89,7 +91,7 @@ main {
     letter-spacing: 3px;
 }
 
-.cartao-pokedev .tipo {
+.cartao-pokemon .tipo {
     background-color: #ffffff;
     font-size: 12px;
     opacity: 0.7;
@@ -98,7 +100,7 @@ main {
     
 }
 
-.cartao-pokedev .detalhes {
+.cartao-pokemon .detalhes {
     color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -107,7 +109,7 @@ main {
     text-shadow: 0px 0px 2px #000000;
 }
 
-.cartao-pokedev .cartao-informacoes {
+.cartao-pokemon .cartao-informacoes {
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -118,13 +120,13 @@ main {
     border-bottom-left-radius: 30px;
 }
 
-.cartao-pokedev .cartao-informacoes h3 {
+.cartao-pokemon .cartao-informacoes h3 {
     font-size: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #6f747a;
 }
 
-.cartao-pokedev .cartao-informacoes .descricao {
+.cartao-pokemon .cartao-informacoes .descricao {
     padding: 10px;
     font-size: 15px;
     max-height: 150px;
@@ -175,11 +177,11 @@ main {
 
 }
 
-.listagem .pokedev img {
+.listagem .pokemon img {
     width: 25%;
 }
 
-.listagem .pokedev {
+.listagem .pokemon {
     background-color: #6b727a;
 
     color: #ffffff;
@@ -198,22 +200,23 @@ main {
     overflow-y: visible;
 }
 
-.listagem .pokedev:hover {
+.listagem .pokemon:hover {
     transform: scale(1.05);
     background-color: #3d4146;
     transition: 0.15s;
 }
 
-.listagem .pokedev span{
+.listagem .pokemon span{
    padding-right: 10px;
 }
 
-.listagem .pokedev.ativo{
+.listagem .pokemon.ativo{
     background-color: #fa6668;
  }
 
-.pokedevs {
+.pokemons {
     display: flex;
     gap: 30px;
     padding: 30px 0px;
 }
+
