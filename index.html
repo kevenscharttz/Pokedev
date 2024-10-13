@@ -1,208 +1,282 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedev - Semana do Zero ao Programador Contratado</title>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedevs - Semana do Zero ao Programador Contratado</title>
+    
     <link rel="stylesheet" href="./src/css/style.css">
-</head>
-<body>
-    <main>
-        <div class="pokedevs">
-            <div class="cartoes-pokedev">
-                <div class="cartao-pokedev tipo-grama aberto" id="cartao-bulbasaur">
-                  <div class="cartao-topo">
-                    <div class="detalhes">
-                      <h2 class="nome">Bulbasaur</h2>
-                      <span>#001</span>
-                    </div>
-      
-                    <span class="tipo">grama</span>
-                    <span class="tipo">veneno</span>
-                    <div class="cartao-imagem">
-                      <img src="./src/img/bulbasaur.gif" alt="bulbasaur" />
-                    </div>
-                  </div>
-      
-                  <div class="cartao-informacoes">
-                    <div class="descricao">
-                      <h3>Descrição</h3>
-      
-                      <p>Por algum tempo após o nascimento, ele usa os nutrientes contidos na semente em suas costas para crescer.</p>
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="cartao-pokedev tipo-grama" id="cartao-ivysaur">
-                  <div class="cartao-topo">
-                    <div class="detalhes">
-                      <h2 class="nome">Ivysaur</h2>
-                      <span>#002</span>
-                    </div>
-      
-                    <span class="tipo">grama</span>
-                    <span class="tipo">veneno</span>
-      
-                    <div class="cartao-imagem">
-                      <img src="./src/img/ivysaur.gif" alt="ivysaur" />
-                    </div>
-                  </div>
-      
-                  <div class="cartao-informacoes">
-                    <div class="descricao">
-                      <h3>Descrição</h3>
-                      <p>Quanto mais luz solar Ivysaur recebe, mais força brota dentro dele, permitindo que o broto em suas costas cresça mais.</p>
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="cartao-pokedev tipo-grama" id="cartao-venusaur">
-                  <div class="cartao-topo">
-                    <div class="detalhes">
-                      <h2 class="nome">Venusaur</h2>
-                      <span>#003</span>
-                    </div>
-      
-                    <span class="tipo">grama</span>
-                    <span class="tipo">veneno</span>
-      
-                    <div class="cartao-imagem">
-                      <img src="./src/img/venusaur.gif" alt="venusaur" />
-                    </div>
-                  </div>
-      
-                  <div class="cartao-informacoes">
-                    <div class="descricao">
-                      <h3>Descrição</h3>
-                      <p>Um pokedev sênior constantemente atormentado por uma dor de cabeça persistente. Quando a dor se torna intensa demais,consegue acessar habilidades de programação extraordinárias, resolvendo problemas complexos com uma facilidade surpreendente.</p>
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="cartao-pokedev tipo-fogo" id="cartao-charmander">
-                  <div class="cartao-topo">
-                    <div class="detalhes">
-                      <h2 class="nome">Charmander</h2>
-                      <span>#004</span>
-                    </div>
-      
-                    <span class="tipo">Fogo</span>
-      
-                    <div class="cartao-imagem">
-                      <img src="./src/img/charmander" alt="charmander" />
-                    </div>
-                  </div>
-      
-                  <div class="cartao-informacoes">
-                    <div class="descricao">
-                      <h3>Descrição</h3>
-      
-                      <p>A chama que queima na ponta de sua cauda é uma indicação de suas emoções. A chama oscila quando CHARMANDER está se divertindo. Se o POKéMON ficar furioso, a chama queima ferozmente.</p>
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="cartao-pokedev tipo-fogo" id="cartao-charmeleon">
-                  <div class="cartao-topo">
-                    <div class="detalhes">
-                      <h2 class="nome">Charmeleon</h2>
-                      <span>#005</span>
-                    </div>
-      
-                    <span class="tipo">Fogo</span>
-      
-                    <div class="cartao-imagem">
-                      <img src="./src/img/charmeleon.gif" alt="charmeleon" />
-                    </div>
-                  </div>
-      
-                  <div class="cartao-informacoes">
-                    <div class="descricao">
-                      <h3>Descrição</h3>
-                      <p>CHARMELEON destrói impiedosamente seus inimigos usando suas garras afiadas. Se ele encontra um inimigo forte, ele se torna agressivo. Neste estado excitado, a chama na ponta de sua cauda brilha com uma cor branca azulada.</p>
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="cartao-pokedev tipo-fada" id="cartao-charizard">
-                  <div class="cartao-topo">
-                    <div class="detalhes">
-                      <h2 class="nome">Charizard</h2>
-                      <span>#062</span>
-                    </div>
-      
-                    <span class="tipo">Fogo</span>
-                    <span class="tipo">Voador</span>
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
 
-                    <div class="cartao-imagem">
-                      <img src="./src/img/charizard.gif" alt="charizard" />
-                    </div>
-                  </div>
-      
-                  <div class="cartao-informacoes">
-                    <div class="descricao">
-                      <h3>Descrição</h3>
-                      <p>A expressão “trabalhe enquanto eles dormem” poderia ter sido facilmente criada por este pokedev. Afinal, ele tem o dom
-                      de codar por horas e horas, madrugada adentro, regado a muito café e energéticos. Sua dedicação é tão intensa que,
-                      enquanto a maioria das pessoas está descansando, ele está imerso em linhas de código, resolvendo problemas e criando
-                      soluções.</p>   
-                    </div>
-                  </div>
-                </div>
+  <body>
+    <main>
+      <div class="pokedevs">
+        <div class="cartoes-pokedev">
+          <div class="cartao-pokedev tipo-grama aberto" id="cartao-bulbasaur">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Bulbasaur</h2>
+                <span>#001</span>
               </div>
-            <nav class="listagem">
-                <ul>
-                    <li class="pokedev ativo" id="bulbasaur">
-                        <img src="./src/img/bulbasaur-mini.png" alt="bulbasaur">
-                        <span>Bulbasaur</span>
-                    </li>
-                    <li class="pokedev" id="ivysaur ">
-                        <img src="./src/img/ivysaur-mini.png" alt="ivysaur">
-                        <span>Ivysaur</span>
-                    </li>
-                    <li class="pokedev" id="venusaur">
-                        <img src="./src/img/venusaur-mini.png" alt="venusaur">
-                        <span>Venusaur</span>
-                    </li>
-                    <li class="pokedev" id="charmander">
-                        <img src="./src/img/charmander-mini.png" alt="charmander">
-                        <span>Charmander</span>
-                    </li>
-                    <li class="pokedev" id="charmeleon">
-                        <img src="./src/img/charmeleon-mini.png" alt="charmeleon">
-                        <span>Charmeleon</span>
-                    </li>
-                    <li class="pokedev" id="charizard">
-                        <img src="./src/img/charizard-mini.png" alt="charizard">
-                        <span>Charizard</span>
-                        <li class="pokedev ativo" id="bulbasaur">
-                          <img src="./src/img/bulbasaur-mini.png" alt="bulbasaur">
-                          <span>Bulbasaur</span>
-                      </li>
-                      <li class="pokedev" id="ivysaur ">
-                          <img src="./src/img/ivysaur-mini.png" alt="ivysaur">
-                          <span>Ivysaur</span>
-                      </li>
-                      <li class="pokedev" id="venusaur">
-                          <img src="./src/img/venusaur-mini.png" alt="venusaur">
-                          <span>Venusaur</span>
-                      </li>
-                      <li class="pokedev" id="charmander">
-                          <img src="./src/img/charmander-mini.png" alt="charmander">
-                          <span>Charmander</span>
-                      </li>
-                      <li class="pokedev" id="charmeleon">
-                          <img src="./src/img/charmeleon-mini.png" alt="charmeleon">
-                          <span>Charmeleon</span>
-                      </li>
-                      <li class="pokedev" id="charizard">
-                          <img src="./src/img/charizard-mini.png" alt="charizard">
-                          <span>Charizard</span>
-                    </li>
-                  </li>
-                </ul>
-            </nav>
+
+              <span class="tipo">grama</span>
+              <span class="tipo">veneno</span>
+
+              <div class="cartao-imagem">
+                <img src="./src/img/bulbasaur.png" alt="Bulbasaur" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="descricao">
+                <h3>Descrição</h3>
+
+                <p>
+                  Por algum tempo após o nascimento, ele usa os nutrientes contidos na semente em suas costas para crescer.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokedev tipo-grama" id="cartao-ivysaur">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Ivysaur</h2>
+                <span>#002</span>
+              </div>
+
+              <span class="tipo">grama</span>
+              <span class="tipo">veneno</span>
+
+              <div class="cartao-imagem">
+                <img src="./src/img/ivysaur.png" alt="Ivysaur"/>
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="descricao">
+                <h3>Descrição</h3>
+                <p>
+                  Quanto mais luz solar Ivysaur recebe, mais força brota dentro dele, permitindo que o broto em suas costas cresça mais.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokedev tipo-grama" id="cartao-venusaur">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Venusaur</h2>
+                <span>#003</span>
+              </div>
+
+              <span class="tipo">grama</span>
+              <span class="tipo">veneno</span>
+
+              <div class="cartao-imagem">
+                <img src="./src/img/venusaur.png" alt="Venusaur"/>
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="descricao">
+                <h3>Descrição</h3>
+                <p>
+                  Enquanto se aquece no sol, ele pode converter a luz em energia. Como resultado, ele é mais potente no verão.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokedev tipo-fogo" id="cartao-charmander">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Charmander</h2>
+                <span>#004</span>
+              </div>
+
+              <span class="tipo">Fogo</span>
+
+              <div class="cartao-imagem">
+                <img src="./src/img/charmander.png" alt="Charmander" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="descricao">
+                <h3>Descrição</h3>
+
+                <p>
+                  A chama em sua cauda mostra a força de sua força vital. Se Charmander for fraco, a chama também queima fracamente.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokedev tipo-fogo" id="cartao-charmeleon">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Charmeleon</h2>
+                <span>#005</span>
+              </div>
+
+              <span class="tipo">Fogo</span>
+
+              <div class="cartao-imagem">
+                <img src="./src/img/charmeleon.png" alt="Charmeleon" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="descricao">
+                <h3>Descrição</h3>
+                <p>
+                  Quando ele balança sua cauda em chamas, a temperatura ao redor dele sobe cada vez mais, atormentando seus oponentes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokedev tipo-fogo" id="cartao-charizard">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Charizard</h2>
+                <span>#006</span>
+              </div>
+
+              <span class="tipo">Fogo</span>
+              <span class="tipo">Voador</span>
+
+              <div class="cartao-imagem">
+                <img src="./src/img/charizard.png" alt="Charizard" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="descricao">
+                <h3>Descrição</h3>
+                <p>
+                  Se Charizard ficar realmente irritado, a chama na ponta de sua cauda queima em um tom azul claro.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokedev tipo-agua" id="cartao-squirtle">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Squirtle</h2>
+                <span>#007</span>
+              </div>
+
+              <span class="tipo">Água</span>
+
+              <div class="cartao-imagem">
+                <img src="./src/img/squirtle.png" alt="Squirtle" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="descricao">
+                <h3>Descrição</h3>
+                <p>
+                  Após o nascimento, suas costas incham e endurecem em uma concha. Ele borrifa uma espuma potente de sua boca.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokedev tipo-agua" id="cartao-wartortle">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Wartortle</h2>
+                <span>#008</span>
+              </div>
+
+              <span class="tipo">Água</span>
+
+              <div class="cartao-imagem">
+                <img src="./src/img/wartortle.png" alt="Wartortle" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="descricao">
+                <h3>Descrição</h3>
+                <p>
+                  A cauda longa e peluda de Wartortle é um símbolo de longevidade, por isso esse Pokémon é bastante popular entre pessoas mais velhas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokedev tipo-agua" id="cartao-blastoise">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Blastoise</h2>
+                <span>#008</span>
+              </div>
+
+              <span class="tipo">Água</span>
+
+              <div class="cartao-imagem">
+                <img src="./src/img/blastoise.png" alt="Blastoise" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="descricao">
+                <h3>Descrição</h3>
+                <p>
+                  Ele aumenta deliberadamente o peso do seu corpo para poder suportar o recuo dos jatos de água que dispara.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <nav class="listagem">
+          <ul>
+            <li class="pokedev ativo" id="bulbasaur">
+              <img src="./src/img/bulbasaur.png" alt="Bulbasaur" />
+              <span>Bulbasaur</span>
+            </li>
+            <li class="pokedev" id="ivysaur">
+              <img src="./src/img/ivysaur.png" alt="Ivysaur" />
+              <span>Ivysaur</span>
+            </li>
+            <li class="pokedev" id="venusaur">
+              <img src="./src/img/venusaur.png" alt="Venusaur" />
+              <span>Venusaur</span>
+            </li>
+            <li class="pokedev" id="charmander">
+              <img src="./src/img/charmander.png" alt="Charmander" />
+              <span>Charmander</span>
+            </li>
+            <li class="pokedev" id="charmeleon">
+              <img src="./src/img/charmeleon.png" alt="Charmeleon" />
+              <span>Charmeleon</span>
+            </li>
+            <li class="pokedev" id="charizard">
+              <img src="./src/img/charizard.png" alt="Charizard" />
+              <span>Charizard</span>
+              <li class="pokedev" id="squirtle">
+                <img src="./src/img/squirtle.png" alt="Squirtle" />
+                <span>Squirtle</span>
+              </li>
+              <li class="pokedev" id="wartortle">
+                <img src="./src/img/wartortle.png" alt="Wartortle" />
+                <span>Wartortle</span>
+              </li>
+              <li class="pokedev" id="blastoise">
+                <img src="./src/img/Blastoise.png" alt="Blastoise" />
+                <span>Blastoise</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </main>
-</body>
+    <script src="./src/js/index.js"></script>
+  </body>
 </html>
